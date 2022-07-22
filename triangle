@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Area
+{
+  public static void main(String[] args)
+  {
+     float area,a,b;
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter a and b values: ");
+     a=sc.nextFloat();
+     b=sc.nextFloat();
+     area = (0.5)*b*a;
+     System.out.println("%f"+area);
+   }
+ }
