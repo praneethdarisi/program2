@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class PrimitiveTypes
+{
+	public static void main(String[] args)
+	{
+		Scanner input=new Scanner(System.in);
+		System.out.print("Enter the byte value: ");
+		byte x=input.nextByte();
+		System.out.print("Enter the short value: ");
+		short y=input.nextShort();
+		System.out.print("Enter the int value: ");
+		int z=input.nextInt();
+		System.out.print("Enter the long value: ");
+		long a=input.nextLong();
+		System.out.print("Enter the boolean value: ");
+		boolean b=input.nextBoolean();
+		System.out.print("Enter the double value: ");
+		double c=input.nextDouble();
+		System.out.print("Enter the float value: ");
+		float d=input.nextFloat();
+		System.out.println("byte default value = "+x);
+		System.out.println("short default value = "+y);
+		System.out.println("int default value = "+z);
+		System.out.println("long default value = "+a);
+		System.out.println("boolean default value = "+b);
+		System.out.println("double default value = "+c);
+		System.out.println("float default value = "+d);
+		 
+		
+	}
+}
