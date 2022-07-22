@@ -1,0 +1,65 @@
+class Student
+{
+  int id;
+  String name;
+  void setData(int a,String d)
+  {
+  	id = a;
+  	name = d;
+  }
+  void displayData()
+  {
+  	System.out.println("Id : "+id);
+  	System.out.println("Name : "+name);
+  }
+}
+class Marks extends Student
+{
+	float javaMarks;
+	float cMarks;
+	float cppMarks;
+	void setMarks(float b,float c,float d)
+	{
+		javaMarks = b;
+		cMarks = c;
+		cppMarks = d;
+	}
+	void displayMarks()
+	{
+		System.out.println("Java marks : "+javaMarks);
+		System.out.println("C marks : "+cMarks);
+		System.out.println("Cpp marks : "+cppMarks);
+	}
+}
+class Result extends Marks
+{
+	float total;
+	float avg;
+	void compute(float b,float c,float d)
+	{
+		total = b+c+d;
+		avg = total / 3;
+	}
+	void showResult()
+	{
+	  System.out.println("Total : "+total);
+	  System.out.println("Avg : "+avg);
+	}
+}
+class MultilevelInheritanceDemo
+{
+	public static void main(String[] args)
+	{
+		int a = Integer.parseInt(args[0]);
+		float c = Float.parseFloat(args[2]);
+		float d = Float.parseFloat(args[3]);
+		float e = Float.parseFloat(args[4]);
+		Result obj = new Result();
+		obj.setData(a,args[1]);
+		obj.displayData();
+		obj.setMarks(c,d,e);
+		obj.displayMarks();
+		obj.compute(c,d,e);
+		obj.showResult();
+	}
+}
